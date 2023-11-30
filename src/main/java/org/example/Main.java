@@ -1,10 +1,14 @@
 package org.example;
 
+import org.example.deadlock.Resource;
+
 public class Main {
     public static void main(String[] args)
     {
-        Object class_1 = new Object();
-        Object class_2 = new Object();
+//        Object class_1 = new Object();
+//        Object class_2 = new Object();
+        Resource class_1 = new Resource();
+        Resource class_2 = new Resource();
 
         Runnable task12 = new Runnable() {
             public void run() {
